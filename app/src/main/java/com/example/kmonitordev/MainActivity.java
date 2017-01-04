@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.setClassName("com.android.phone", "com.android.phone.MobileNetworkSettings");
         changeText();
+        DataUsageNotification.notify(this, "Hello Notification", 1);
         startActivityForResult(intent, 0);
     }
 }
